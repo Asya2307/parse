@@ -5,7 +5,7 @@ import { Main } from './components/main';
 
 function App() {
     return (
-        <BrowserRouter basename={window.location.pathname || ''}>
+        <BrowserRouter basename={window.location.pathname || '/result'}>
             <div className={styles.content}>
                 <Routes>
                     <Route path="/" element={<Main />} />
