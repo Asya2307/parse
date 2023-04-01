@@ -5,12 +5,10 @@ import { Main } from './components/main';
 
 function App() {
     return (
-        <BrowserRouter basename={window.location.pathname || '/result'}>
+        <BrowserRouter basename={window.location.pathname || ''}>
             <div className={styles.content}>
-                <Routes>
-                    <Route path="/" element={<Main />} />
-                    <Route path="/result" element={<Result />} />
-                </Routes>
+                <Route path="/" element={<Main />} />
+                <Route path="/result/" element={<Result />} />
             </div>
         </BrowserRouter>
     );
